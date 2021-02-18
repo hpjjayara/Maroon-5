@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="StyleSheets/TourDates.css">
+    <script src="https://kit.fontawesome.com/855201d3bf.js" crossorigin="anonymous"></script>
+    <title>Tour Dates</title>
+    <link rel="icon" href="Logo/Web page logo.png" type="image">
+</head>
+<body>
+    <header>
+        <img class="logo" src="Logo/Maroon-Five-Logo.png" alt="logo" width="200" height="70">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="Home.html">HOME</a></li>
+                <li><a href="TourDates.html">EVENTS</a></li>
+                <li><a href="Gallery.html">GALLARY</a></li>
+                <li><a href="Shop Main Page.html">STORE</a></li>
+                <li><a href="QuizIndex.html">QUIZ</a></li>
+                <li><a href="Site Map.html">SITE MAP</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="tabel-content">
+        <h1>Upcomming Tour Dates</h1>
+        <div class="border1"></div>
+    <table class="content-table">
+    <tr>
+        <td>MARCH 30, 2020</td>
+        <td>North Island Credit Union Amphitheatre<br>
+            Chula Vista, CA<br>
+            W/Meghan Trinor
+        </td>
+        <td ><button class="option" onclick="view(1)">Canceled</button></td>
+    </tr>
+    <tr>
+        <td>MARCH 31, 2020</td>
+        <td>AK-Chin Pavilion<br>
+            Phoenix, AZ<br>
+            W/Meghan Trainor
+        </td>
+        <td ><button class="option" onclick="view(1)">Canceled</button></td>
+    </tr>
+    <tr>
+        <td>APRIL 3, 2020</td>
+        <td>Isleta Amphitheatre<br>
+            Albuquerque, NM<br>
+            W/ Meghan Trainor
+        </td>
+        <td ><button class="option" onclick="view(1)">Canceled</button></td>
+    </tr>
+    <tr>
+        <td>APRIL 5, 2020</td>
+        <td>Pepsi Center<br>
+            Denver, CO<br>
+            W/ Meghan Trainor
+        </td>
+        <td ><button class="option" onclick="view(1)">Canceled</button></td>
+    </tr>
+    <tr>
+        <td>MAY 10, 2020</td>
+        <td>Germania Insurance Amphitheatre<br>
+            Austin, TX<br>
+            W/ Meghan Trainor
+        </td>
+        <td ><button class="option" onclick="view(2)">Due Soon</button></td>
+    </tr>
+    </table>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="left-col">
+                <img src="Logo/maroon-5-Footer-Logo.png" class="footer-logo">
+                <br>
+                <div class="social-media">
+                    <a class="socialBtn" href="https://www.facebook.com/">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="socialBtn" href="https://www.twitter.com/">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="socialBtn" href="https://www.google.com/">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a class="socialBtn" href="https://www.instagram.com/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="socialBtn" href="https://www.youtube.com/">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                <p class="rights-text">Page Editor - <a href="CV/PubuduCV.html"><span class="pageEditor">Pubudu De silva</span></a></p>
+            </div>
+
+            <div class="right-col">
+                <h1>Our Newsletter</h1>
+                <div class="border"></div>
+                <p>Enter Your Email to get our news and updates.</p>
+                <div class="newsletter-form">
+                    <input type="text" class="txtb" placeholder="Enter Your Email" id="newsLetterEmail">
+                    <button class="btn" onclick="send()">send</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function view(x){
+            if(x == 1){
+                alert("This event is canceled due to COVID-19 outbreak.\nWe request from you try to stay at home for your owan safety");
+            } else {
+                alert("Tickets will be available soon");
+            }
+        }
+
+        /*start footer email check */
+function send(){
+  var sendMail = document.getElementById("newsLetterEmail").value;
+  var valid_email_letter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  
+  if(sendMail == ""){
+    alert("Please Enter Your Email");
+  }
+  else if (!(sendMail.match(valid_email_letter))){
+    alert("Please Enter Valid Email");
+  } else {
+    alert("Thanks For Subscription");
+  }
+}
+/*start footer email check */
+    </script>
+
+</body>
+</html>

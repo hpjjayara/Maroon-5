@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" type="image/png" href="../Images/Other/Web page logo.png">
+		<title>Shop | Item</title>
+		<script src="https://kit.fontawesome.com/855201d3bf.js" crossorigin="anonymous"></script>
+		<style>
+			body{
+				font-family: "Bahnschrift";
+				margin: 0;
+				padding: 0;
+			}
+
+			
+
+			*{
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+
+			/*start navigation bar*/
+li, a{
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10px;
+    background-image: linear-gradient(to right,white, black);
+    z-index: 1;
+}
+
+.logo{
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: white;
+    letter-spacing: 5px;
+}
+/*end navigation bar*/
+
+/*start footer*/
+footer{
+    background: #f1f1f1;
+    padding: 90px 0;
+}
+
+.footer-container{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.footer-logo{
+    width: 180px;
+}
+
+.social-media{
+    margin: 20px 0;
+}
+
+.social-media a{
+    margin-right: 25px;    
+}
+
+.right-col h1{
+    font-size: 33px;
+
+}
+
+.border{
+    width: 100px;
+    height: 4px;
+    background: #fc5c65;
+}
+
+.newsletter-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.txtb{
+    flex: 1;
+    padding: 18px 40px;
+    font-size: 16px;
+    color: #293043;
+    background: #ddd;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    min-width: 260px;
+}
+
+.btn{
+    padding: 18px 40px;
+    font-size: 16px;
+    color: #f1f1f1;
+    background: #fc5c65;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: opacity 0.3s linear;
+}
+
+.btn:hover{
+    opacity: .7;
+}
+
+.right-col p{
+    margin: 20px 0;
+}
+
+/*start socail button animation*/
+.social-media{
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.socialBtn{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #f1f1f1;
+    margin: 0;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #fc5c65;
+    overflow: hidden;
+    position: relative;
+}
+
+.socialBtn i{
+    line-height: 50px;
+    font-size: 20px;
+    transition: 0.2s linear;
+}
+
+.socialBtn:hover i{
+    transform: scale(1.3);
+    color: #f1f1f1;
+}
+
+.socialBtn::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #fc5c65;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+
+.socialBtn:hover::before{
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+
+@keyframes aaa{
+    0%{
+        left: -110%;
+        top: -90%;
+    }
+    50%{
+        left: 10%;
+        top: -30%;
+    }
+    100%{
+        top: -10%;
+        left: -10%;
+    }
+}
+
+.pageEditor{
+    font-size: 15px;
+    color: #fc5c65;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/*end socail button animation*/
+/*end footer*/
+
+			/*CSS GRID*/
+
+			.grid-container {
+				grid-template-columns: 1fr 2fr;
+				display: grid;
+				padding: 15px 200px;
+			}
+
+			.grid-item1 {
+				text-align: center;
+				padding: 10px;
+			}
+
+			.grid-item2 {
+				text-align: center;
+				padding: 50px;
+			}
+
+			.product{
+    			height: 500px; 
+			}
+
+			h1{
+				text-align: left;
+			}
+
+			h2{
+				text-align: left;
+			}
+
+			
+
+			.box select {
+				background-color: #e6e6e6;
+				color: black;
+				padding: 12px;
+				width: 100;
+				border: none;
+				font-size: 16px;
+				-webkit-appearance: button;
+				appearance: button;
+				outline: none;
+			}
+
+			.box::before {
+				content: "\f13a";
+				top: 0;
+				right: 0;
+				width: 20%;
+				height: 100%;
+				text-align: left;
+				font-size: 28px;
+				line-height: 45px;
+				color: rgba(255, 255, 255, 0.5);
+				background-color: rgba(255, 255, 255, 0.1);
+				pointer-events: none;
+			}
+
+			.box:hover::before {
+				color: rgba(255, 255, 255, 0.6);
+				background-color: rgba(255, 255, 255, 0.2);
+			}
+
+			.box select option {
+				padding: 30px;
+			}
+
+			.addButton {
+				background-color:grey;
+				border-radius:42px;
+				border:1.5px solid black;
+				display:inline-block;
+				cursor:pointer;
+				color:black;
+				font-size:19px;
+				padding:5px 8px;
+				text-decoration:none;
+			}
+			.addButton:hover {
+				background-color:#5cbf2a;
+			}
+			.addButton:active {
+				position:relative;
+				top:1px;
+			}
+
+			.addCart {
+				background-color:#cccccc;
+				border:0px solid black;
+				display:inline-block;
+				cursor:pointer;
+				color:#000000;
+				font-size:23px;
+				font-weight:bold;
+				padding:28px 46px;
+				text-decoration:none;
+			}
+			.addCart:hover {
+				background-color:#828282;
+			}
+			.addCart:active {
+				position:relative;
+				top:1px;
+			}
+
+			.homeButton {
+				background-color:#cccccc;
+				display:inline-block;
+				cursor:pointer;
+				color:#000000;
+				font-size:15px;
+				font-weight:bold;
+				padding:13px 24px;
+				text-decoration:none;
+			}
+			.homeButton:hover {
+				background-color:#575757;
+			}
+			.homeButton:active {
+				position:relative;
+				top:1px;
+			}
+
+			#quantity{
+				border:1.5px solid black;
+				width: 50px;
+				padding: 8px 20px;
+				margin: 8px 0;
+				box-sizing: border-box;
+			}
+
+			.fontSizeDiv{
+				background-color: transparent;
+				left: 78%;
+				top: 85%;
+				border: 1.5px solid black;
+				width: 306px;
+				position: fixed;
+				border-radius: 50px;
+			}
+			.fontSizeDiv button{
+				padding: 5px;
+				float: right;
+				margin: 4px;
+				background-color: white+;
+				border-radius: 50px;
+			}
+
+		</style>
+
+	</head>
+
+	<body id="font">
+		
+	<!--start navigation bar-->
+	<header>
+		<img class="logo" src="../Logo/Maroon-Five-Logo.png" alt="logo" width="200" height="70">
+		<nav>
+			<ul class="nav_links">
+				<li><a href="../Home.html">HOME</a></li>
+				<li><a href="../TourDates.html">EVETS</a></li>
+				<li><a href="../Gallery.html">GALLARY</a></li>
+				<li><a href="../Shop Main Page.html">STORE</a></li>
+				<li><a href="../QuizIndex.html">QUIZ</a></li>
+				<li><a href="../Site Map.html">SITE MAP</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!--End navigation bar-->
+		<br><br><br><br><br><br>
+
+		<a href="../Shop Main Page.html" class="homeButton">BACk</a>
+
+		<div class = "container">
+
+			<div class="grid-container">
+				<div class="grid-item1">
+					<div class="grid-item"><img class="product" src="../Images/Men/Men wear (3).jpg"></div>
+				</div>
+				<div class="grid-item2">
+					<br><br>
+					<h1>Maroon 5 What Lovers Do Lips<br><br>$15.95</h1><br>
+					<h2>Size<br>
+					<div class = "box">
+						<select id="size">
+							<option value="sml">SM</option>
+							<option value="med">MED</option>
+							<option value="lrg">LG</option>
+							<option value="xl">XL</option>
+						</select>
+					</div></h2><br>
+					<h2>Quantity
+					<button class="addButton" type="addButton" onclick="minusOne()">-</button>
+					<input type="text" id="quantity" name="quantity" value= "1" min= "1">
+					<button class="addButton" type="addButton" onclick="plusOne()">+</button>
+					</h2>
+
+					<br><br>
+
+					<button class="addCart" type="addCart" onclick="goToCart()">ADD TO CART</button>
+
+				</div>
+			</div>
+
+
+		</div>
+
+		 <div class="fontSizeDiv">
+            <button type="button" onclick="myFunction1()">small</button>
+            <button type="button" onclick="myFunction2()">normal</button>
+            <button type="button" onclick="myFunction3()">large</button>
+            <button type="button" onclick="myFunction4()">x-large</button>
+            <button type="button" onclick="myFunction5()">xx-large</button>
+     	 </div>
+
+		<script>
+
+			function myFunction1() {
+		      document.getElementById("font").style.fontSize = "0.8em";
+		    }
+		    function myFunction2() {
+		      document.getElementById("font").style.fontSize = "1.1em";
+		    }
+		    function myFunction3() {
+		      document.getElementById("font").style.fontSize = "1.25em";
+		    }
+		    function myFunction4() {
+		      document.getElementById("font").style.fontSize = "1.4em";
+		    }
+		    function myFunction5() {
+		      document.getElementById("font").style.fontSize = "1.9em";
+		    }
+
+			q = parseInt(document.getElementById("quantity").value);
+
+			function minusOne() {
+				q --;
+				document.getElementById("quantity").value = q;
+				
+			};
+
+			function plusOne() {
+				q ++;
+				document.getElementById("quantity").value = q;
+
+			};
+
+			var cart = [];
+
+			
+			function goToCart() {
+
+				alert("Your order has been placed");
+
+				for (i = 0; i < q; i++) {
+					cart.push("item1");
+				}				
+			};
+
+		</script>
+
+
+		<!--start footer-->
+		<footer>
+			<div class="footer-container">
+				<div class="left-col">
+					<img src="../Logo/maroon-5-Footer-Logo.png" class="footer-logo">
+					<br>
+					<div class="social-media">
+						<a class="socialBtn" href="https://www.facebook.com/">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+						<a class="socialBtn" href="https://www.twitter.com/">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<a class="socialBtn" href="https://www.google.com/">
+							<i class="fab fa-google"></i>
+						</a>
+						<a class="socialBtn" href="https://www.instagram.com/">
+							<i class="fab fa-instagram"></i>
+						</a>
+						<a class="socialBtn" href="https://www.youtube.com/">
+							<i class="fab fa-youtube"></i>
+						</a>
+					</div>
+					<p class="rights-text">Page Editor - <a href="../CV/NirmalCV.html"><span class="pageEditor">Nirmal De silva</span></a></p>
+				</div>
+	
+				<div class="right-col">
+					<h1>Our Newsletter</h1>
+					<div class="border"></div>
+					<p>Enter Your Email to get our news and updates.</p>
+					<div class="newsletter-form">
+						<input type="text" class="txtb" placeholder="Enter Your Email" id="newsLetterEmail">
+						<button class="btn" onclick="send()">send</button>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--end footer-->
+	<script>
+		/*start footer email check */
+		function send(){
+		  var sendMail = document.getElementById("newsLetterEmail").value;
+		  var valid_email_letter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+		  
+		  if(sendMail == ""){
+			alert("Please Enter Your Email");
+		  }
+		  else if (!(sendMail.match(valid_email_letter))){
+			alert("Please Enter Valid Email");
+		  } else {
+			alert("Thanks For Subscription");
+		  }
+		}
+		/*end footer email check */
+		</script>
+
+
+	</body>
+</html>

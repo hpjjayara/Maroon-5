@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WELCOME TO QUIZ</title>
+    <link rel="stylesheet" type="text/css" href="StyleSheets/quizCSS.css">
+    <script src="https://kit.fontawesome.com/855201d3bf.js" crossorigin="anonymous"></script>
+    <script src="JS/quiz-J.js"></script> 
+    <link rel="icon" href="Logo/Web page logo.png" type="image">
+
+    <style>
+      /*start navigation bar*/
+      *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    li, a{
+        font-size: 16px;
+        color: black;
+        text-decoration: none;
+        letter-spacing: 2px;
+    }
+    
+    header{
+        width: 100%;
+        position: fixed;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 10px;
+        background-image: linear-gradient(to right,white, black);
+        z-index: 1;
+    }
+    
+    .logo{
+        margin-right: auto;
+        cursor: pointer;
+    }
+    
+    .nav_links{
+        list-style: none;
+    }
+    
+    .nav_links li{
+        display: inline-block;
+        padding: 0px 20px;
+    }
+    
+    .nav_links li a{
+        color: white;
+        transition: all 0.3s ease 0s;
+    }
+    
+    .nav_links li a:hover{
+        color: white;
+        letter-spacing: 5px;
+    }
+    /*end navigation bar*/	
+
+/*start footer*/
+footer{
+    background: #f1f1f1;
+    padding: 90px 0;
+}
+
+.footer-container{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.footer-logo{
+    width: 180px;
+}
+
+.social-media{
+    margin: 20px 0;
+}
+
+.social-media a{
+    margin-right: 25px;    
+}
+
+.right-col h1{
+    font-size: 33px;
+
+}
+
+.border{
+    width: 100px;
+    height: 4px;
+    background: #fc5c65;
+}
+
+.newsletter-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.txtb{
+    flex: 1;
+    padding: 18px 40px;
+    font-size: 16px;
+    color: #293043;
+    background: #ddd;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    min-width: 260px;
+}
+
+.btn{
+    padding: 18px 40px;
+    font-size: 16px;
+    color: #f1f1f1;
+    background: #fc5c65;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: opacity 0.3s linear;
+}
+
+.btn:hover{
+    opacity: .7;
+}
+
+.right-col p{
+    margin: 20px 0;
+}
+
+/*start socail button animation*/
+.social-media{
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.socialBtn{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #f1f1f1;
+    margin: 0;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #fc5c65;
+    overflow: hidden;
+    position: relative;
+}
+
+.socialBtn i{
+    line-height: 50px;
+    font-size: 20px;
+    transition: 0.2s linear;
+}
+
+.socialBtn:hover i{
+    transform: scale(1.3);
+    color: #f1f1f1;
+}
+
+.socialBtn::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #fc5c65;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+
+.socialBtn:hover::before{
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+
+@keyframes aaa{
+    0%{
+        left: -110%;
+        top: -90%;
+    }
+    50%{
+        left: 10%;
+        top: -30%;
+    }
+    100%{
+        top: -10%;
+        left: -10%;
+    }
+}
+
+.pageEditor{
+    font-size: 15px;
+    color: #fc5c65;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/*end socail button animation*/
+/*end footer*/
+
+
+
+      </style>
+    
+  </head>
+  <body id="font">
+    <header>
+      <img class="logo" src="Logo/Maroon-Five-Logo.png" alt="logo" width="200" height="70">
+      <nav>
+          <ul class="nav_links">
+              <li><a href="Home.html">HOME</a></li>
+              <li><a href="TourDates.html">EVETS</a></li>
+              <li><a href="Gallery.html">GALLARY</a></li>
+              <li><a href="Shop Main Page.html">STORE</a></li>
+              <li><a href="QuizIndex.html">QUIZ</a></li>
+              <li><a href="Site Map.html">SITE MAP</a></li>
+          </ul>
+      </nav>
+  </header>
+   
+    
+    <div class="section"></div>
+         <div id="starting">
+            <h1 class="mainPage">VIDEO GAME QUIZ</h1>
+            <P class="instru"><br>
+               * There will be 10 questions<br>
+               * You will get 1 seconds for each question<br>
+               * Quiz will end if your time runs out<br>
+               * Time will start right after you click begin<br>
+               * You will get 2 marks for each correct answer,and -1 for each wrong answer
+            </P><br><br>
+            <button class='button1' onclick="window.location.href='Quizes.html'">BEGIN QUIZ</button>
+         </div>
+     </div>
+          <!-- font size change -->
+        <div class="fontSizeDiv">
+            <button type="button" onclick="myFunction1()">small</button>
+            <button type="button" onclick="myFunction2()">normal</button>
+            <button type="button" onclick="myFunction3()">large</button>
+            <button type="button" onclick="myFunction4()">x-large</button>
+            <button type="button" onclick="myFunction5()">xx-large</button>
+            </div>  
+          
+			<!--start footer-->
+			<footer>
+				<div class="footer-container">
+					<div class="left-col">
+						<img src="Logo/maroon-5-Footer-Logo.png" class="footer-logo">
+						<br>
+						<div class="social-media">
+							<a class="socialBtn" href="https://www.facebook.com/">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+							<a class="socialBtn" href="https://www.twitter.com/">
+								<i class="fab fa-twitter"></i>
+							</a>
+							<a class="socialBtn" href="https://www.google.com/">
+								<i class="fab fa-google"></i>
+							</a>
+							<a class="socialBtn" href="https://www.instagram.com/">
+								<i class="fab fa-instagram"></i>
+							</a>
+							<a class="socialBtn" href="https://www.youtube.com/">
+								<i class="fab fa-youtube"></i>
+							</a>
+						</div>
+						<p class="rights-text">Page Editor - <a href="CV/JayathiCV.html"><span class="pageEditor">Jayathi Jayara</span></a></p>
+					</div>
+		
+					<div class="right-col">
+						<h1>Our Newsletter</h1>
+						<div class="border"></div>
+						<p>Enter Your Email to get our news and updates.</p>
+						<div class="newsletter-form">
+							<input type="text" class="txtb" placeholder="Enter Your Email" id="newsLetterEmail">
+							<button class="btn" onclick="send()">send</button>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!--end footer-->
+<script>
+			/*start footer email check */
+function send(){
+  var sendMail = document.getElementById("newsLetterEmail").value;
+  var valid_email_letter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  
+  if(sendMail == ""){
+    alert("Please Enter Your Email");
+  }
+  else if (!(sendMail.match(valid_email_letter))){
+    alert("Please Enter Valid Email");
+  } else {
+    alert("Thanks For Subscription");
+  }
+}
+</script>
+
+      
+
+</body>
+
+</html>
+

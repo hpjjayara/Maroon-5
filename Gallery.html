@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maroon 5 Gallery</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="StyleSheets/Gallerycss.css" />
+    <link rel="shortcut icon" type="image/png" href="Logo/Web page logo.png">
+    
+    <script src="https://kit.fontawesome.com/855201d3bf.js" crossorigin="anonymous"></script>
+
+    <script src="JS/GallaryJS.js"></script>
+    <style>
+        /*start navigation bar*/
+li, a{
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10px;
+    background-image: linear-gradient(to right,white, black);
+    z-index: 1;
+}
+
+.logo{
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: white;
+    letter-spacing: 5px;
+}
+/*end navigation bar*/
+
+/*start footer*/
+footer{
+    background: #f1f1f1;
+    padding: 90px 0;
+}
+
+.footer-container{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.footer-logo{
+    width: 180px;
+}
+
+.social-media{
+    margin: 20px 0;
+}
+
+.social-media a{
+    margin-right: 25px;    
+}
+
+.right-col footerh1{
+    font-size: 33px;
+
+}
+
+
+
+.border{
+    width: 100px;
+    height: 4px;
+    background: #fc5c65;
+}
+
+.newsletter-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.txtb{
+    flex: 1;
+    padding: 18px 40px;
+    font-size: 16px;
+    color: #293043;
+    background: #ddd;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    min-width: 260px;
+}
+
+.btn{
+    padding: 18px 40px;
+    font-size: 16px;
+    color: #f1f1f1;
+    background: #fc5c65;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: opacity 0.3s linear;
+}
+
+.btn:hover{
+    opacity: .7;
+}
+
+.right-col p{
+    margin: 20px 0;
+}
+
+/*start socail button animation*/
+.social-media{
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.socialBtn{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #f1f1f1;
+    margin: 0;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #fc5c65;
+    overflow: hidden;
+    position: relative;
+}
+
+.socialBtn i{
+    line-height: 50px;
+    font-size: 20px;
+    transition: 0.2s linear;
+}
+
+.socialBtn:hover i{
+    transform: scale(1.3);
+    color: #f1f1f1;
+}
+
+.socialBtn::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #fc5c65;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+
+.socialBtn:hover::before{
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+
+@keyframes aaa{
+    0%{
+        left: -110%;
+        top: -90%;
+    }
+    50%{
+        left: 10%;
+        top: -30%;
+    }
+    100%{
+        top: -10%;
+        left: -10%;
+    }
+}
+
+
+.right-col #footerh1{
+    font-size: 33px;
+    color: black;
+    margin-left: 0;
+
+}
+
+.pageEditor{
+    font-size: 15px;
+    color: #fc5c65;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/*end socail button animation*/
+/*end footer*/
+    
+    
+    </style>
+</head>
+<body id = "font">
+    <!--start navigation bar-->
+    <header>
+        <img class="logo" src="Logo/Maroon-Five-Logo.png" alt="logo" width="200" height="70">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="Home.html">HOME</a></li>
+                <li><a href="TourDates.html">EVETS</a></li>
+                <li><a href="Gallery.html">GALLARY</a></li>
+                <li><a href="Shop Main Page.html">STORE</a></li>
+                <li><a href="QuizIndex.html">QUIZ</a></li>
+                <li><a href="Site Map.html">SITE MAP</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--End navigation bar-->
+
+    <br><br><br><br><br><br>
+    <h1>Maroon 5 Gallery</h1>
+
+    <img src="" alt="" srcset="">
+
+    <div class="container">
+        <div class="box">
+            <div class="imgBox">
+                <img src="Images\Adam.jpg" alt="" srcset="">
+            </div>
+            <div class="details">
+                <div class="content">
+                    <h2>Adam Levine</h2>
+                    <p>Adam Levine, in full Adam Noah Levine, (born March 18, 1979, Los Angeles, California, U.S), American musician, actor, and television personality who first gained fame as the lead singer and chief songwriter of Maroon 5 and later broadened his audience as a coach on the television singing competition </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="imgBox">
+                    <img src="Images\Jesse.jpg" alt="" srcset="">
+            </div>
+            <div class="details">
+                <div class="content">
+                    <h2>Jesse Carmichael</h2>
+                    <p>Jesse Royal Carmichael (born April 2, 1979) is an American musician, singer and songwriter. He is best known as the keyboardist and rhythm guitarist for the pop rock band Maroon 5. Carmichael also has a solo project called 1863.</p>
+                </div>
+            </div>
+        </div>
+
+  
+        <div class="box">
+            <div class="imgBox">
+                <img src="Images\MattFlynn.jpg" alt="" srcset="">
+            </div>
+            <div class="details">
+                <div class="content">
+                    <h2>Matthew Flynn</h2>
+                    <p>Matthew Flynn (born May 23, 1970) is an American musician and record producer. He is the drummer for the pop rock band Maroon 5. ... Prior to joining Maroon 5, Flynn has played drums for The B-52's, Chicago, Gavin DeGraw and Gandhi.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="imgBox">
+                    <img src="Images\Mickey.jpg" alt="" srcset="">
+            </div>
+            <div class="details">
+                <div class="content">
+                    <h2>Mickey Madden</h2>
+                    <p>Austin, Texas, U.S. Michael Allen Madden (born May 13, 1979) is an American musician. He is the bassist for the pop rock band Maroon 5</p>
+                </div>
+            </div>
+        </div>
+                    
+    
+        <div class="box">
+            <div class="imgBox">
+                <img src="Images\PjMorton.jpg" alt="" srcset="">
+            </div>
+            <div class="details">
+                <div class="content">
+                    <h2>Paul Morton</h2>
+                    <p>PJ Morton (born as Paul Morton Jr.; March 29, 1981) is an American musician, singer, songwriter and record producer. Since 2012, he has been one of the keyboardists, alongside Jesse Carmichael, for the pop rock band Maroon 5.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="imgBox">
+                    <img src="Images\James.jpg" alt="" srcset="">
+            </div>
+            <div class="details">
+                <div class="content">
+                    <h2>James Valentine</h2>
+                    <p>James Valentine is best known as the guitarist for Los Angeles-based pop/rock outfit Maroon 5. Hailing from Lincoln, NE, he was born on October 5, 1978, into a Mormon family, attending church on a regular basis while growing up.</p>
+
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="box">
+            <div class="imgBox">
+                <img src="Images\Sam.jfif" alt="" srcset="">
+            </div>
+            <div class="details">
+                <div class="content">
+                    <h2>Samuel John Farrar</h2>
+                    <p>Samuel John Farrar (born June 29, 1978) is an Australian–American musician, singer and record producer. He is best known as a member of the pop rock band Maroon 5, in which he plays several instruments.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="imgBox">
+                    <img src="Images\pic5.jpg" alt="" srcset="">
+            </div>
+            <div class="details">
+                <div class="content">
+                    <h2>Maroon 5</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Selction for backbround color and text -->
+    <div class="selectDiv">
+<div class="selections">
+
+<div class="selectBox"></div>
+<div class="heading"><h4 id="sC">SELECT BACKGROUND COLOR:</h4></div>
+<select id="drp1" class="drpDown1" onchange="backgroundDrop()" >
+    <option class="opt" value="white">White</option>
+    <option class="opt" value="red">Red</option>
+    <option class="opt" value="black">Black</option>
+    <option class="opt" value="gray">Gray</option>
+    <option class="opt" value="blue">Blue</option>
+ </select>
+
+<div class="selectBox2">
+<div class="heading"><h4 id="sC">SELECT TEXT COLOR:</h4></div>
+<select id="drp2" class="drpDown1" onchange="backgroundDrop2()" onchange="removeProperty()">
+    <option class="opt" value="black">Black</option>
+    <option class="opt" value="red">Red</option>
+    <option class="opt" value="gray">Gray</option>
+    <option class="opt" value="blue">Blue</option>
+ </select>
+</div>
+</div>
+    </div>
+
+
+<div class="fontSizeDiv">
+    <button type="button" onclick="myFunction1()">small</button>
+    <button type="button" onclick="myFunction2()">normal</button>
+    <button type="button" onclick="myFunction3()">large</button>
+    <button type="button" onclick="myFunction4()">x-large</button>
+    <button type="button" onclick="myFunction5()">xx-large</button>
+</div>
+
+
+      
+    
+
+
+    <!---- Footer ---->
+    <!--start footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="left-col">
+                <img src="Logo/maroon-5-Footer-Logo.png" class="footer-logo">
+                <br>
+                <div class="social-media">
+                    <a class="socialBtn" href="https://www.facebook.com/">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="socialBtn" href="https://www.twitter.com/">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="socialBtn" href="https://www.google.com/">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a class="socialBtn" href="https://www.instagram.com/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="socialBtn" href="https://www.youtube.com/">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                <p class="rights-text">Page Editor - <a href="CV/ChameeshaCV.html"><span class="pageEditor">Chameesha Sooriyarachchi</span></a></p>
+            </div>
+
+            <div class="right-col">
+                <h1 id="footerh1">Our Newsletter</h1>
+                <div class="border"></div>
+                <p>Enter Your Email to get our news and updates.</p>
+                <div class="newsletter-form">
+                    <input type="text" class="txtb" placeholder="Enter Your Email" id="newsLetterEmail">
+                    <button class="btn" onclick="send()">send</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--end footer-->
+<script>
+    /*start footer email check */
+function send(){
+  var sendMail = document.getElementById("newsLetterEmail").value;
+  var valid_email_letter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  
+  if(sendMail == ""){
+    alert("Please Enter Your Email");
+  }
+  else if (!(sendMail.match(valid_email_letter))){
+    alert("Please Enter Valid Email");
+  } else {
+    alert("Thanks For Subscription");
+  }
+}
+/*end footer email check */
+</script>
+        
+</body>
+</html>
